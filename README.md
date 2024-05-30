@@ -3,3 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/69c18eac89cf0bc5cca5/maintainability)](https://codeclimate.com/github/voxsilly/python-project-49/maintainability)
 
 [![asciicast](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5.svg)](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5)
+
+Brain Calc
+[![asciicast](https://asciinema.org/a/YA80dJQWUpAgeMSRXJ7T4KONb.svg)](https://asciinema.org/a/YA80dJQWUpAgeMSRXJ7T4KONb)
