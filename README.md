@@ -4,5 +4,5 @@
 
 [![asciicast](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5.svg)](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5)
 
-[![Brain Calc]]
+## Brain Calc
 [![asciicast](https://asciinema.org/a/uHM51pos6SXsrvGWykKy9tefH.svg)](https://asciinema.org/a/uHM51pos6SXsrvGWykKy9tefH)
