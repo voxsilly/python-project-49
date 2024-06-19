@@ -21,7 +21,7 @@ def get_progression():  # a - длина прогрессии, b - началь�
 
 
 def get_copy(progression):
-    a = randint(0, len(progression))
+    a = randint(0, len(progression) - 1)
     result = []
     for i in range(len(progression)):
         if i == a:
@@ -34,7 +34,7 @@ def get_copy(progression):
 
 
 def ask_question(progression):
-    line = ", ".join(map(str, progression))
+    line = " ".join(map(str, progression))
     response = prompt.string(f"Question: {line}\nYour answer: ")
     return response
 
