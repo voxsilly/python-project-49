@@ -3,6 +3,7 @@ import prompt
 from random import randint
 from random import choice
 
+
 def welcome_user():
     name = prompt.string("May I have your name? ")
     print("Hello,", name)
