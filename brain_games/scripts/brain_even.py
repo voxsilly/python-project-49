@@ -9,18 +9,16 @@ def welcome_user():
     return name
 
 
-def getrand():  # get random number up to 100
+def get_random_number():  # get random number up to 100
     return randint(1, 100)
 
 
-def check_right(answer, number):  # check if the answer is correct
-    if number % 2 == 0 and answer == 'yes':
-        return True
-    elif number % 2 != 0 and answer == 'no':
-        return True
-    else:
-        return False
+def is_correct_answer(number, answer):  # check if the answer is correct
+    return (number % 2 == 0 and answer == 'yes') or (number % 2 != 0 and answer == 'no')
 
+
+def correct_answer(number):
+    return 'yes' if number % 2 == 0 else 'no'
 
 def check_answer(number):  # get right answer. a bit excessive, but it works
     if number % 2 != 0:
@@ -32,29 +30,20 @@ def check_answer(number):  # get right answer. a bit excessive, but it works
 
 
 def play(name):
-    i = 0
-    number = getrand()
-    print(f'Question: {number}')
-    answer = prompt.string('Your answer: ')
-    if check_right(answer, number) is False:
-        print(f"'{answer}' is wrong answer ;(.\
-Correct answer was '{check_answer(number)}'")
-        print(f"Let's try again, {name}")
-    elif check_right(answer, number):
-        print('Correct!')
-        while i < 2 and check_right(answer, number):
-            i += 1
-            number = getrand()
-            print(f'Question: {number}')
-            answer = prompt.string('Your answer: ')
-            if check_right(answer, number):
-                print("Correct!")
-            else:
-                print(f"'{answer}' is wrong answer ;(.\
- Correct answer was '{check_answer(number)}'")
-                print(f"Let's try again, {name}")
-    if i == 2 and check_right(answer, number):
-        print(f"Congratulations, {name}!")
+    correct_answers = 0
+    while correct_answers < 3:
+        number = get_random_number()
+        print(f'Question: {number}')
+        answer = prompt.string('Your answer: ')
+        if is_correct_answer(number, answer):
+            print('Correct!')
+            correct_answers += 1
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer(number)}'")
+            print(f"Let's try again, {name}")
+            correct_answers = 0  # reset correct answers count if wrong answer
+
+    print(f"Congratulations, {name}!")
 
 
 def main():
