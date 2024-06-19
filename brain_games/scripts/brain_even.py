@@ -45,7 +45,7 @@ def play(name):
         else:
             print(f"'{answer}' is wrong answer ;(."
                   f" Correct answer was '{correct_answer(number)}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
     if i == 3:
         print(f"Congratulations, {name}!")
