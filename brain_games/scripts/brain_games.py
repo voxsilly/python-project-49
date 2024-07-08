@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
+from logic import welcome_user
+import sys
+import os
+sys.path.insert(
+    0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+)
 
 
 def main():
