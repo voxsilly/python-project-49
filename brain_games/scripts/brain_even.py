@@ -11,7 +11,7 @@ sys.path.insert(
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    print('Answer "yes" if given number is even. Otherwise answer "no".')
+    print('Answer "yes" if the number is even. Otherwise answer "no".')
     play_game(name, game_logic)
 
 
