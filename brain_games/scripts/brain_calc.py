@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from logic import welcome_user, play_game
-from games.brain_calc import game_logic
+from brain_games.logic import welcome_user, play_game
+from brain_games.games.brain_calc import game_logic
 import sys
 import os
 sys.path.insert(

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from logic import welcome_user
+from brain_games.logic import welcome_user
 import sys
 import os
 sys.path.insert(
