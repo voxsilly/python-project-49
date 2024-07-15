@@ -4,10 +4,9 @@ from brain_games.games.brain_calc import game_logic
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
-    print('What is the result of the expression?')
-    play_game(name, game_logic)
+    question_text = 'What is the result of the expression?'
+    play_game(name, game_logic, question_text)
 
 
 if __name__ == '__main__':
