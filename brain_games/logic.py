@@ -23,7 +23,8 @@ def interpret_answer(response, correct_answer):
         return False
 
 
-def play_game(name, game_logic):
+def play_game(name, game_logic, question_text):
+    print(question_text)
     i = 0
     while i < 3:
         question, correct_answer = game_logic()
