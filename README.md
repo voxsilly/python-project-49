@@ -23,14 +23,15 @@ flake8 версии 7.0.0 для разработки
 Установите Python версии 3.8.1 и выше (но ниже 4.0).
 Установите Poetry.
 
-2. Склонируйте репозиторий:
+2. Склонируйте репозиторий и перейдите в директорию:
 git clone https://github.com/voxsilly/python-project-49
+
 cd python-project-49
 
-3. Установите зависимости:
+4. Установите зависимости:
 poetry install
 
-4. Установите пакет: 
+5. Установите пакет: 
 make package-install
 make build
 make publish
