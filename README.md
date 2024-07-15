@@ -30,14 +30,21 @@ cd python-project-49
 3. Установите зависимости:
 poetry install
 
-4. Запускайте игры с помощью команд Poetry:
-poetry run brain-games
-poetry run brain-even
-poetry run brain-calc
-poetry run brain-gcd
-poetry run brain-progression
-poetry run brain-prime
+4. Установите пакет: 
+make package-install
+make build
+make publish
 
+6. Запускайте игры:
+brain-games
+brain-calc        
+brain-prime
+brain-even
+brain-gcd
+brain-progression
+
+## Asciinema шагов: 
+[![asciicast](https://asciinema.org/a/vQ3vnfhqqgHkKH02L2PJOA6O0.svg)](https://asciinema.org/a/vQ3vnfhqqgHkKH02L2PJOA6O0)
 
 [![asciicast](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5.svg)](https://asciinema.org/a/WPgiZf3Zce4J9Wg6AndhFw9X5)
 
