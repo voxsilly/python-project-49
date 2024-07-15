@@ -20,10 +20,12 @@ flake8 версии 7.0.0 для разработки
 
 ### Инструкции по установке
 1. Убедитесь, что у вас установлен Python и Poetry:
+
 Установите Python версии 3.8.1 и выше (но ниже 4.0).
 Установите Poetry.
 
 2. Склонируйте репозиторий и перейдите в директорию:
+
 git clone https://github.com/voxsilly/python-project-49
 
 cd python-project-49
@@ -32,17 +34,28 @@ cd python-project-49
 poetry install
 
 5. Установите пакет: 
+
 make package-install
+
 make build
+
 make publish
 
+
 6. Запускайте игры:
+
 brain-games
+
 brain-calc        
+
 brain-prime
+
 brain-even
+
 brain-gcd
+
 brain-progression
+
 
 ## Asciinema шагов: 
 [![asciicast](https://asciinema.org/a/vQ3vnfhqqgHkKH02L2PJOA6O0.svg)](https://asciinema.org/a/vQ3vnfhqqgHkKH02L2PJOA6O0)
