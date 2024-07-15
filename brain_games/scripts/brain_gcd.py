@@ -4,10 +4,9 @@ from brain_games.games.brain_gcd import game_logic
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
-    print("Find the greatest common divisor of given numbers.")
-    play_game(name, game_logic)
+    question_text = "Find the greatest common divisor of given numbers."
+    play_game(name, game_logic, question_text)
 
 
 if __name__ == '__main__':
